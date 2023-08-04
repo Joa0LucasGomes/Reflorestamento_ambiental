@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reflorestamento</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      background-color: #f3eeee;
+    }
+
+    .forest-container {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+
+    .forest-image {
+      position: absolute;
+      top: 0;
+      left: 13%;
+      width: 75%;
+      height: 100%;
+      object-fit: cover;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    #deadForestImage {
+      opacity: 0;
+    }
+
+    .forest-container:hover #forestImage {
+      opacity: 0;
+    }
+
+    .forest-container:hover #deadForestImage {
+      opacity: 1;
+    }
+
+    .title {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    @media (max-width: 768px) {
+      .title {
+        position: static;
+        margin-top: 20px;
+        text-align: center;
+      }
+    }
+
+    .content-area {
+      width: 75%;
+      max-width: 800px;
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="forest-container">
+    <img src="floresta_morta.jpg" alt="Floresta Bonita" class="forest-image" id="forestImage">
+    <img src="floresta_viva.jpg" alt="Floresta Morta" class="forest-image" id="deadForestImage">
+    <div class="title">Reflorestamento: Ações que mudam o mundo</div>
+  </div>
+  <div class="content-area">
+    <h2>Reflorestamento: Recuperando a Vida e Preservando o Futuro</h2>
+    <p>
+        O reflorestamento é uma ação essencial para reverter os danos causados pela devastação das florestas e promover a sustentabilidade do nosso planeta. Com o aumento da urbanização, a exploração de recursos naturais e as mudanças climáticas, muitas áreas florestais têm sido perdidas ao longo dos anos. No entanto, o reflorestamento oferece esperança e soluções concretas para enfrentar esses desafios globais.
+    </p>
+    <p>
+        Restaurar ecossistemas florestais é mais do que simplesmente plantar árvores. É uma abordagem abrangente que visa recuperar a biodiversidade, melhorar a qualidade do ar e da água, mitigar os efeitos das mudanças climáticas e proporcionar sustento para comunidades locais. O processo de reflorestamento envolve o plantio e o cuidado com espécies nativas, respeitando as características únicas de cada ecossistema.
+    </p>
+    <p>
+        Além de seu impacto positivo no meio ambiente, o reflorestamento oferece benefícios socioeconômicos significativos. À medida que as florestas se recuperam, empregos são criados em atividades de plantio e manejo florestal. Comunidades locais podem se beneficiar de recursos naturais sustentáveis, como madeira, frutas, medicamentos e mel, aumentando sua resiliência e qualidade de vida.
+    </p>
+    <p>
+        O papel das empresas e organizações não pode ser subestimado nesse processo. Através de parcerias, projetos de reflorestamento são implementados em larga escala, ampliando o alcance e o impacto positivo. A responsabilidade corporativa também impulsiona a adoção de práticas sustentáveis e contribui para a neutralização das emissões de carbono.
+    </p>
+    <p>
+        Todos nós podemos contribuir para o reflorestamento e a proteção das florestas. Participar de iniciativas de plantio, apoiar organizações dedicadas à preservação florestal e adotar um estilo de vida mais consciente em relação ao meio ambiente são algumas das ações que podemos tomar. Pequenos esforços individuais se somam e têm o poder de causar grandes mudanças.
+    </p>
+    <p>
+        O reflorestamento é uma jornada em prol da harmonia entre o homem e a natureza. Cuidar das florestas é cuidar do nosso futuro e das gerações que estão por vir. Ao agir hoje, podemos construir um amanhã mais verde, resiliente e próspero para todos.
+    </p>
+      <p>Atenciosamente,</p>
+      <strong>João Lucas Gomes de Souza</strong>
+    </div>
+  </body>
+  </html>
